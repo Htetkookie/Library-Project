@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" >
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link -->
+    <link href="./profile1.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="universal.css">
+<!-- <link rel="stylesheet" href="universal.js"> -->
+   
+
+</head>
+
+<body>
+
+
+    <!--First Header section -->
+
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="./../index.html" class="logo"> <div style=" width: 30px; display: inline-block;"> <img src="./image/4.png"  style="object-fit: contain; width: 100%;" alt=""> </div> Titan</a>
+
+
+            <form action="" class="search-form">
+                <input type="search" name="" id="search-box" placeholder="search" />
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fa-solid fa-moon"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+        </div>
+
+        <!-- Second Header Section -->
+
+        <div class="header-2">
+            <nav class="navbar nav">
+                <a href="index.html" id="f-home" style="padding-left: 10vw;">Home</a>
+                <a href="categories/index.html">Books</a>
+                <a href="juu.html">Authors</a>
+                <a href="profile.html">Profile</a>
+                <a href="about-us.html" style="padding-right: 10vw;">About Us</a>
+            </nav>
+        </div>
+
+    </header>
+
+    
+
+
+
+
+    <!-- bottom navbar -->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fa-solid fa-book-open"></a>
+        <a href="#arrivals" class="fa-solid fa-user"></a>
+        <a href="#cathegorie" class="fa-solid fa-list"></a>
+        <a href="#profile" class="fa-solid fa-address-card"></a>
+    </nav>
+
+
+
+    <!-- Login Form -->
+
+    <div class="login-form-container">
+        <form action="">
+
+            <div id="close-login-btn" class="fas fa-times"></div>
+
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="" />
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+    </div>
+
+    
+
+
+
+
+
+    <!-- Profile -->
+
+<section>
+    <div class="card overflow-hidden">
+        <div class="profile">
+            <div class="profile-header">
+                <img src="image/profile1.jpg" alt="profile" class="profile-img" />
+                <div>
+                    <h1 class="profile-title">User Name</h1>
+                    <p class="profile-email">Techtianlibrary@gmail.com</p>
+                </div>
+            </div>
+
+        <!-- List -->
+
+        <div class="row no-gutters row-bordered row-border-light">
+            <div class="col-md-3 pt-0">
+                <div class="list-group list-group-flush account-settings-links">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list"
+                        href="#current-reading">Current Reading</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list"
+                        href="#fav-books">Favourite Books</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                        href="#trend-books">Trending Books</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list"
+                        href="#author-list">Followed Author List</a>
+                    <!-- Logout button -->
+                    <button type="button" class="list-group-item list-group-item-action logout-btn" data-toggle="modal" data-target="#exampleModalCenter">
+                        Log Out
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Log Out</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            <h5>Are you sure you would like to log out from your account?</h5>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancle</button>
+                            <button type="button" class="btn btn-primary" style="background-color: teal;">Log Out</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+
+                    <!-- Current Reading -->
+                    <div class="tab-pane active show
+                     fade" id="current-reading">
+                        <!-- Current Reading Books -->
+                        <section class="popular" id="popular">
+
+                            <div class="swiper popular-slider">
+                    
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/မိန်းမတစ်ယောက်၏ဖွင့်ဟဝန်ခံချက်၊_ဂျူး.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="juubook2.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="juubook2.html"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="juu.html">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/amattaya.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="juubook1.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="juubook1.html"><img src="image/juu_2.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>အမှတ်တရ</h3>
+                                            <div class="by">by <span><a href="juu.html">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/ahtettanser.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="punyakhin1.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="punyakhin1.html"><img src="assects/ahtettanseryay.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>အထက်တန်းစားရေ</h3>
+                                            <div class="by">by <span><a href="pnk.html">ပုညခင်</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                   
+
+                                </div>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/latkyanlayaung.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="punyakhin2.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="punyakhin2.html"><img src="assects/letkyanlayaung.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>လက်ကျန်လရောင်</h3>
+                                            <div class="by">by <span><a href="pnk.html">ပုညခင်</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                  
+
+                                </div>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                              
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                        <!-- Fav books -->
+                    <div class="tab-pane fade" id="fav-books">
+                        
+                        <section class="popular" id="popular">
+
+                            <div class="swiper popular-slider">
+                    
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/မိန်းမတစ်ယောက်၏ဖွင့်ဟဝန်ခံချက်၊_ဂျူး.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="juubook2.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="juubook2.html"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="juu.html">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/amattaya.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="juubook1.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="juubook1.html"><img src="image/juu_2.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>အမှတ်တရ</h3>
+                                            <div class="by">by <span><a href="juu.html">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/ahtettanser.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="punyakhin1.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="punyakhin1.html"><img src="assects/ahtettanseryay.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>အထက်တန်းစားရေ</h3>
+                                            <div class="by">by <span><a href="pnk.html">ပုညခင်</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                   
+
+                                </div>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/latkyanlayaung.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="punyakhin2.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="punyakhin2.html"><img src="assects/letkyanlayaung.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>လက်ကျန်လရောင်</h3>
+                                            <div class="by">by <span><a href="pnk.html">ပုညခင်</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                  
+
+                                </div>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                              
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Trend Books -->
+                    <div class="tab-pane fade" id="trend-books">
+                        
+                        <section class="popular" id="popular">
+
+                            <div class="swiper popular-slider">
+                    
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/မိန်းမတစ်ယောက်၏ဖွင့်ဟဝန်ခံချက်၊_ဂျူး.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="juubook2.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="juubook2.html"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="juu.html">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/amattaya.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="juubook1.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="juubook1.html"><img src="image/juu_2.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>အမှတ်တရ</h3>
+                                            <div class="by">by <span><a href="juu.html">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/ahtettanser.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="punyakhin1.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="punyakhin1.html"><img src="assects/ahtettanseryay.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>အထက်တန်းစားရေ</h3>
+                                            <div class="by">by <span><a href="pnk.html">ပုညခင်</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                   
+
+                                </div>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="assects/file/latkyanlayaung.pdf" download class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="punyakhin2.html" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="punyakhin2.html"><img src="assects/letkyanlayaung.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>လက်ကျန်လရောင်</h3>
+                                            <div class="by">by <span><a href="pnk.html">ပုညခင်</a></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                  
+
+                                </div>
+
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-slide box">
+                                        <div class="icons">
+                                            <a href="#" class="fa-solid fa-download"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-eye"></a>
+                                        </div>
+                                        <div class="image">
+                                            <a href="#"><img src="./image/sample-book.png" alt=""></a>
+                                        </div>
+                                        <div class="content">
+                                            <div class="star">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက်</h3>
+                                            <div class="by">by <span><a href="#">Juu</a></span></div>
+                                        </div>
+                                    </div>
+                    
+                              
+                                </div>
+                            </div>
+                        </section>
+                        
+                        </div>
+                    <!-- Author List -->
+                    <div class="tab-pane fade" id="author-list">
+                    <!-- Current Reading Books -->
+                    <div class="author-list">
+                        <div class="author-item">
+                            <div class="author-background">
+                    <a href="juu.html">
+                        <img src="https://mm-lib.com/assets/img/1630117063artworks-000074975017-g4mw2f-t500x500.jpg" alt="Juu Photo" class="author-photo">
+                    </a>
+                            </div>
+                            <div class="author-info">
+                                <h1  class="author-name"><a href="juu.html">ဂျူး</a></h1>
+                                <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="author-item">
+                        <a href="pnk.html">
+                            <img src="https://www.mm-lib.com/assets/img/1636465446ပုညခင်.jpg" alt="Juu Photo" class="author-photo">
+                        </a>
+                            <div class="author-info">
+                                <h1  class="author-name"><a href="pnk.html">ပုညခင်</a></h1>
+                           
+                                <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="author-item">
+                            <img src="https://mm-lib.com/assets/img/1630117063artworks-000074975017-g4mw2f-t500x500.jpg" alt="Juu Photo" class="author-photo">
+                            <div class="author-info">
+                                <h1  class="author-name"><a href="#">ဂျူး</a></h1>
+                           
+                                <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="author-item">
+                            <img src="https://mm-lib.com/assets/img/1630117063artworks-000074975017-g4mw2f-t500x500.jpg" alt="Juu Photo" class="author-photo">
+                            <div class="author-info">
+                                <h1  class="author-name"><a href="#">ဂျူး</a></h1>
+                           
+                                <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="author-item">
+                            <img src="https://mm-lib.com/assets/img/1630117063artworks-000074975017-g4mw2f-t500x500.jpg" alt="Juu Photo" class="author-photo">
+                            <div class="author-info">
+                                <h1  class="author-name"><a href="#">ဂျူး</a></h1>
+                           
+                                <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="author-item">
+                            <img src="https://mm-lib.com/assets/img/1630117063artworks-000074975017-g4mw2f-t500x500.jpg" alt="Juu Photo" class="author-photo">
+                            <div class="author-info">
+                                <h1 class="author-name"><a href="#">ဂျူး</a></h1>
+                           
+                                <div class="heart">
+                                <i class="fas fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more author items as needed -->
+                    </div>
+                    
+                    </div>
+
+                    <!-- Notifications -->
+                    <div class="tab-pane fade" id="account-notifications">
+                        <div class="card-body pb-2">
+                            <h6 class="mb-4">Activity</h6>
+                            <div class="form-group">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input" checked>
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Email me when someone comments on my article</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input" checked>
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Email me when someone answers on my forum
+                                        thread</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input">
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Email me when someone follows me</span>
+                                </label>
+                            </div>
+                        </div>
+                        <hr class="border-light m-0">
+                        <div class="card-body pb-2">
+                            <h6 class="mb-4">Application</h6>
+                            <div class="form-group">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input" checked>
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">News and announcements</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input">
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Weekly product updates</span>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="switcher">
+                                    <input type="checkbox" class="switcher-input" checked>
+                                    <span class="switcher-indicator">
+                                        <span class="switcher-yes"></span>
+                                        <span class="switcher-no"></span>
+                                    </span>
+                                    <span class="switcher-label">Weekly blog digest</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="tag">
+                <h1>Quick Link</h1>
+                <a href="#">Home</a>
+                <a href="#">Featured</a>
+                <a href="#">Arrivals</a>
+                <a href="#">Authors</a>
+                <a href="#">About Us</a>
+            </div>
+
+            <div class="tag">
+                <h1>Contact Info</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+959 123456789</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+959 123456789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i><span>titan@</span></a>
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="end">&copy;Copyright to Tech Titan (National University of Computer Studies)</p>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

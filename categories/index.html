@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./../universal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="D:\UCS_JS\Titan Project\images\art.png">
+    <link rel="icon" type="image/x-icon" href="./assects/favicon2.jpg">
+</head>
+
+<body>
+
+    <!--First Header section -->
+
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="./../index.html" class="logo"> <div style=" width: 30px; display: inline-block;"> <img src="../image/4.png"  style="object-fit: contain; width: 100%;" alt=""> </div> Titan</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" id="search-box" placeholder="search" />
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fa-solid fa-moon"></a>
+                <div id="login-btn" class="fas fa-user"></div>
+            </div>
+
+        </div>
+
+        <!-- Second Header Section -->
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="./../index.html" id="f-home">Home</a>
+                <a href="index.html">Books</a>
+                <a href="./../juu.html">Authors</a>
+                <a href="./../profile.html">Profile</a>
+                <a href="./../about-us.html">About Us</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- bottom navbar -->
+
+    <nav class="bottom-navbar">
+        <a href="./../index.html" class="fas fa-home"></a>
+        <a href="#featured" class="fa-solid fa-book-open"></a>
+        <a href="#arrivals" class="fa-solid fa-user"></a>
+        <a href="#cathegorie" class="fa-solid fa-list"></a>
+        <a href="#profile" class="fa-solid fa-address-card"></a>
+    </nav>
+
+
+
+    <!-- Login Form -->
+
+    <div class="login-form-container">
+        <form action="">
+
+            <div id="close-login-btn" class="fas fa-times"></div>
+
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="" class="box" placeholder="enter your email" id="" />
+            <span>password</span>
+            <input type="password" name="" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+    </div>
+
+    <main>
+        <section class="book-section">
+            <div class="tabs">
+                <button class="tab " >
+                    <img src="images/art.png" alt="Art and Design">
+                    <br>Art and Design</button>
+                <button class="tab" >
+                    <img src="images/fast-food.png" alt="Food and Drinks">
+                    <br>Food and Drinks</button>
+                <button class="tab" >
+                    <img src="images/health.png" alt="Health">
+                    <br>Health</button>
+                <button class="tab" >
+                    <img src="images/techno.png" alt="Tecnology">
+                    <br>Tecnology</button>
+                <button class="tab" >
+                    <img src="images/comic.png" alt="Comics">
+                    <br>Comics</button>
+                <button class="tab" >
+                    <img src="images/education.png" alt="Education" id="Education">
+                    <br>Education</button>
+                <button class="tab" >
+                    <img src="images/moti.png" alt="Motivation">
+                    <br>Motivation</button>
+                <button class="tab" >
+                    <img src="images/noble.png" alt="Noble">
+                    <br>Noble</button>
+            </div>
+            <div class="books-grid">
+                <!-- Book 1 -->
+                <div class="book">
+                    <a href="../punyakhin2.html">
+                    <img src="../assects/letkyanlayaung.png" alt="Book Cover" />
+                    <div class="book-icons">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <div>
+                            <a class="book-icon" download href="./assects/file/latkyanlayaung.pdf">
+                                <i class="fa-solid fa-download"></i>
+                                <!-- Download icon -->
+                            </a>
+                            <button class="book-icon">
+                                <i class="fa-solid fa-heart"></i>
+                                <!-- Favorite icon -->
+                            </button>
+                        </div>
+                    </div>
+                    <br />
+                    <h3>လက်ကျန်လရောင်</h3>
+                    <p>by ပုညခင်</p>
+                </a>
+                </div>
+                <div class="book">
+                    <a href="../punyakhin1.html">
+                    <img src="../assects/ahtettanseryay.png" alt="Book Cover" />
+                    <div class="book-icons">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <div>
+                            <a class="book-icon" download href="./assects/file/ahtettanser.pdf">
+                                <i class="fa-solid fa-download"></i>
+                                <!-- Download icon -->
+                            </a>
+                            <button class="book-icon">
+                                <i class="fa-solid fa-heart"></i>
+                                <!-- Favorite icon -->
+                            </button>
+                        </div>
+                    </div>
+                    <br />
+                    <h3>အထက်တန်းစားရေ</h3>
+                    <p>by ပုညခင်</p>
+                </a>
+                </div>
+
+                <!-- Book 3 -->
+                <div class="book">
+                    <a href="../juubook1.html">
+                    <img src="../assects/amhattaya.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>အမှတ်တရ</h3>
+                    <p>by ဂျူး</p>
+                </a>
+                </div>
+                <!-- Book 4 -->
+                <div class="book">
+                    <a href="../juubook2.html">
+                    <img src="images/served-4.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>မိန်းမတစ်ယောက်ရဲ့ဖွင့်ဟဝန်ခံချက် 4</h3>
+                    <p>by ဂျူး</p>
+                </a>
+                </div>
+                <!-- Book 5 -->
+                <div class="book">
+                    <img src="images/served-5.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 5</h3>
+                    <p>by author 5</p>
+                </div>
+                <!-- Book 6 -->
+                <div class="book">
+                    <img src="images/served-1.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 6</h3>
+                    <p>by author 6</p>
+                </div>
+                <!-- Book 7 -->
+                <div class="book">
+                    <img src="images/served-3.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 7</h3>
+                    <p>by author 7</p>
+                </div>
+                <!-- Book 8 -->
+                <div class="book">
+                    <img src="images/served-2.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 8</h3>
+                    <p>by author 8</p>
+                </div>
+                <!-- Book 9 -->
+                <div class="book">
+                    <img src="images/served-3.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 9</h3>
+                    <p>by author 9</p>
+                </div>
+                <!-- Book 10 -->
+                <div class="book">
+                    <img src="images/served-3.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 10</h3>
+                    <p>by author 10</p>
+                </div>
+                <!-- Book 11 -->
+                <div class="book">
+                    <img src="images/served-2.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 11</h3>
+                    <p>by author 11</p>
+                </div>
+                <!-- Book 12 -->
+                <div class="book">
+                    <img src="images/served-3.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 12</h3>
+                    <p>by author 12</p>
+                </div>
+                <!-- Book 13 -->
+                <div class="book">
+                    <img src="images/served-1.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 13</h3>
+                    <p>by author 13</p>
+                </div>
+                <!-- Book 14 -->
+                <div class="book">
+                    <img src="images/served-3.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 14</h3>
+                    <p>by author 14</p>
+                </div>
+                <!-- Book 15 -->
+                <div class="book">
+                    <img src="images/served-3.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 15</h3>
+                    <p>by author 15</p>
+                </div>
+                <!-- Book 16 -->
+                <div class="book">
+                    <img src="images/served-2.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 16</h3>
+                    <p>by author 16</p>
+                </div>
+                <!-- Add more books as needed -->
+                <div class="book">
+                    <img src="images/served-2.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 16</h3>
+                    <p>by author 16</p>
+                </div>
+
+                <div class="book">
+                    <img src="images/served-2.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 16</h3>
+                    <p>by author 16</p>
+                </div>
+
+                <div class="book">
+                    <img src="images/served-2.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 16</h3>
+                    <p>by author 16</p>
+                </div>
+
+                <div class="book">
+                    <img src="images/served-2.png" alt="Book Cover">
+                    <div class="book-icons">
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-alt"></i>
+                        </div>
+
+                        <!-- Add Download and Favorite Buttons -->
+                        <button class="book-icon">
+                            <i class="fa-solid fa-download"></i> <!-- Download icon -->
+                        </button>
+                        <button class="book-icon">
+                            <i class="fa-solid fa-heart"></i> <!-- Favorite icon -->
+                        </button>
+                    </div>
+                    <br>
+                    <h3>Book Title 16</h3>
+                    <p>by author 16</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="tag">
+                <h1>Quick Link</h1>
+                <a href="./../index.html" id="f-home">Home</a>
+                <a href="index.html">Books</a>
+                <a href="./../juu.html">Authors</a>
+                <a href="profile.html">Profile</a>
+                <a href="./../about-us.html">About Us</a>
+            </div>
+
+            <div class="tag">
+                <h1>Contact Info</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+959 123456789</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+959 123456789</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i><span
+                        style="text-decoration: none !important;">titan@gmail.com</span></a>
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="end">&copy;Copyright to Tech Titan (National University of Computer Studies)</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- custom JS file link -->
+        <script src="./../universal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+/* nav */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --green: #27ae60;
+  --dark-color: rgb(119, 112, 112);
+  --black: #444;
+  --light-color: #666;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --border-hover: 0.1rem solid var(--black);
+  --box-shadow: 0.6rem 1rem 1rem rgba(166, 219, 243, 0.712);
+  --ucs-color: #089da1;
+  --paleblue: rgb(200, 227, 238);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+
+/* Frist Header */
+.header {
+  font-size: 62.5%;
+}
+.header .header-1 {
+  background: #fff;
+  padding: 15px 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header-1 .logo {
+  font-size: 25px;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.header .header-1 .logo i {
+  color: var(--ucs-color);
+}
+
+.header .header-1 .search-form {
+  width: 500px;
+  height: 50px;
+  border: var(--border);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.header .header-1 .search-form input {
+  font-size: 16px;
+  padding: 0 12px;
+  height: 100%;
+  width: 100%;
+  text-transform: none;
+  color: var(--black);
+}
+
+.header .header-1 .search-form label {
+  font-size: 25px;
+  padding-right: 15px;
+  color: var(--black);
+}
+
+.header .header-1 .search-form label:hover {
+  color: var(--ucs-color);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a {
+  font-size: 25px;
+  margin-left: 15px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover {
+  color: var(--ucs-color);
+}
+
+#search-btn {
+  display: none;
+}
+
+/* Second Header */
+
+.header .header-2 {
+  background: var(--ucs-color);
+}
+
+.header .header-2 .navbar {
+  text-align: center !important;
+}
+
+.header .header-2 .navbar a {
+  color: #fff !important;
+  display: inline-block !important;
+  padding: 12px !important;
+  font-size: 17px !important;
+}
+
+.header .header-2 .navbar a:hover {
+  background: var(--dark-color) !important;
+  text-decoration: none !important;
+}
+
+.header .header-2.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+
+/* bottom navbar */
+
+.bottom-navbar{
+  text-align: center;
+  background: var(--ucs-color);
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: none;
+}
+
+.bottom-navbar a{
+  font-size: 25px;
+  padding: 20px;
+  color: #fff;
+}
+
+.bottom-navbar a:hover{
+  background: var(--dark-color);
+}
+
+/* login form */
+
+.login-form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,.9);
+  position: fixed;
+  top:0; right: -105%;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+}
+
+.login-form-container.active{
+  right: 0;
+}
+
+.login-form-container form{
+  background: #fff;
+  border: var(--border);
+  width: 400px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.login-form-container form h3{
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+}
+
+.login-form-container form .box{
+  width: 100%;
+  margin: 7px 0;
+  font-size: 16px;
+  border: var(--border);
+  border-radius: 5px;
+  padding: 10px 12px;
+  color: var(--black);
+  text-transform: none;
+}
+
+.login-form-container form .checkbox{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.login-form-container form .checkbox label{
+  font-size: 15px;
+  color: var(--light-color);
+  cursor: pointer;
+}
+
+.login-form-container form .btn{
+  text-align: center;
+  width: 100%;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.login-form-container form p{
+  padding-top: 8px;
+  color: var(--light-color);
+  font-size: 15px;
+}
+
+.login-form-container form p a{
+  color: var(--ucs-color);
+  text-decoration: underline;
+}
+
+.login-form-container #close-login-btn{
+  position: absolute;
+  top: 15px; right: 25px;
+  font-size: 30px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background: var(--paleblue);
+  }
+  
+  footer .footer_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer .footer_main .tag {
+    margin: 10px 0;
+  }
+  
+  footer .footer_main .tag img {
+    width: 35px;
+    margin-bottom: 10px;
+  }
+  
+  footer .footer_main .tag h1 {
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+    text-align: left;
+  }
+  
+  footer .footer_main .tag a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  footer .footer_main .tag i {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  footer .footer_main .tag .social_link i {
+    margin: 0 5px;
+  }
+  
+  footer .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+    font-size: 20px;
+    background: gray;
+  }

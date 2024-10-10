@@ -1,0 +1,375 @@
+:root {
+  --bg-blue: #e0eaff;
+  --bg-orange: #ff7e15;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding: 0 50px;
+}
+a {
+  text-decoration: none;
+}
+/* navbar css  */
+.firstNav {
+  background: var(--bg-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logoImg {
+  width: 40px;
+}
+.search {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+.searchIcon {
+  width: 30px;
+  height: 30px;
+}
+.searchBox {
+  height: 25px;
+  width: 300px;
+  padding: 5px;
+  background: #e9e4fa;
+  border: 1px solid rgb(41, 41, 253);
+  outline-color: var(--bg-orange);
+
+  border-radius: 5px;
+}
+.searchBox:focus {
+  outline-color: var(--bg-orange);
+  border: none;
+  background: #e9e4fa;
+
+  outline-style: solid;
+}
+.navIconsRight {
+  display: flex;
+  gap: 15px;
+}
+.navIconsRight img {
+  width: 20px;
+}
+/* second nav css */
+.secondNav {
+  background: var(--bg-orange);
+}
+.secondNav ul li {
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  color: black;
+}
+.secondNav ul li:hover {
+  color: blue;
+  background: rgba(255, 255, 255, 0.257);
+}
+.secondNav ul {
+  text-align: center;
+}
+
+/* heroSection about us  */
+.heroSection {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.bgImg {
+  width: 100vw;
+  background-image: url("./assects/aboutus.jpg");
+  height: auto;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.bgImg h4 {
+  color: rgb(39, 39, 248);
+  font-size: 28px;
+  font-family: "Source Serif 4", serif;
+  font-weight: 400;
+  margin-top: -20px;
+}
+.bgImg h3 {
+  font-family: "Source Serif 4", serif;
+  font-weight: 500;
+  font-size: 67px;
+}
+.bgImg h1 {
+  margin-top: -50px;
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  font-size: 96px;
+}
+.teamLogo img {
+  width: 390px;
+}
+.memberGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  grid-template-rows: repeat(4, 1fr);
+
+  gap: 15px 120px;
+  font-family: "Montserrat", system-ui;
+  font-weight: bold;
+  margin-top: 20px;
+}
+/* why we made this  */
+.whywemade {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--bg-blue);
+}
+.grid12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  column-gap: 24px;
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.imgWhywe {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+
+  transform: translateX(-100px);
+  width: 356px;
+}
+.textWhywe {
+  grid-column-start: 6;
+  grid-column-end: span8;
+
+  font-size: 27px;
+  font-family: "Source Serif 4", serif;
+  font-weight: bolder;
+
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+
+  transform: translateX(100px);
+}
+.textWhywe p {
+  font-size: 24px;
+  font-weight: 400;
+}
+/* bebnefit css */
+.benefit {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--bg-blue);
+}
+.imgbenefit {
+  grid-column-start: 9;
+  grid-column-end: span4;
+
+  width: 356px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  transform: translateX(100px);
+}
+.textbenefit {
+  grid-column-start: 1;
+  grid-column-end: 8;
+
+  font-size: 26px;
+  font-family: "Source Serif 4", serif;
+  font-weight: bolder;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.textbenefit p {
+  font-size: 24px;
+  font-weight: 400;
+}
+/* donate css */
+.donate {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--bg-blue);
+}
+.donate h1 {
+  font-family: "Roboto", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.mailbox {
+  width: 71px;
+  padding: 10px 18px;
+  border-radius: 15px 0 0 15px;
+  position: relative;
+
+  background: rgb(255, 186, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 126, 21, 1) 0%,
+    rgba(255, 186, 129, 1) 100%
+  );
+}
+.mailbox::after {
+  content: "";
+  width: 2px;
+  height: 70%;
+  background: black;
+  position: absolute;
+  right: 0;
+}
+.flexDonate {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: fit-content;
+}
+.flexDonate input {
+  flex-grow: 1;
+  background: #ffba81;
+  border: none;
+  padding: 10px 20px;
+  font-size: large;
+  outline: none;
+}
+.flexDonate button {
+  background: rgb(255, 186, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 186, 129, 1) 0%,
+    rgba(255, 126, 21, 1) 100%
+  );
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 15px 15px 0;
+}
+/* footercss */
+.footer {
+  background: #525fe1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer h1 {
+  font-family: "Roboto", system-ui;
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+}
+
+.footerNav ul li {
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+}
+.footerNav ul li:hover {
+  color: black;
+}
+.socialIcons {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.facebook,
+.instagram,
+.snapchat,
+.telegram,
+.twitter {
+  width: 30px;
+}
+.copyright {
+  font-size: 18px;
+  background: black;
+  color: whitesmoke;
+  font-family: "Roboto", system-ui;
+  font-weight: 300;
+  padding: 20px;
+  text-align: center;
+}
+
+/* animationcss */
+
+.visible {
+  transform: translateX(0) !important ;
+  opacity: 1 !important;
+}
+
+/* responsive css */
+@media screen and (max-width: 575px) {
+  nav {
+    display: none;
+  }
+  .bgImg {
+    flex-wrap: wrap;
+  }
+  .bgImg h3 {
+    font-family: "Source Serif 4", serif;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  .bgImg h4 {
+    color: rgb(39, 39, 248);
+    font-size: 18px;
+    font-family: "Source Serif 4", serif;
+    font-weight: 400;
+    margin-top: -20px;
+    text-align: center;
+  }
+  .bgImg h1 {
+    margin-top: -30px;
+    font-family: "Source Serif 4", serif;
+    font-weight: 900;
+    font-size: 80px;
+  }
+.teamLogo{
+  margin-left: auto;
+
+}
+  .teamLogo img {
+
+    width: 80%;
+  }
+  .memberGroup {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 10px 0px;
+  text-align: center;
+  
+    font-family: "Montserrat", system-ui;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+/* 
+@media (max-width:1305px){
+@media (max-width:991px){
+@media (max-width:768px){
+@media (max-width:450px){
+*/

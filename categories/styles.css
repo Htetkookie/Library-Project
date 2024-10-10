@@ -1,0 +1,481 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4fa; /* Light background */
+}
+
+
+.book-section {
+    padding: 20px;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 50px;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+section.home {
+    padding: 50px 9%;
+}
+
+/* Frist Header */
+
+.header .header-1 {
+    background: #fff;
+    padding: 15px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-1 .logo {
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .header-1 .logo i {
+    color: var(--ucs-color);
+}
+
+.header .header-1 .search-form {
+    width: 500px;
+    height: 50px;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.header .header-1 .search-form input {
+    font-size: 16px;
+    padding: 0 12px;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+
+.header .header-1 .search-form label {
+    font-size: 25px;
+    padding-right: 15px;
+    color: var(--black);
+}
+
+.header .header-1 .search-form label:hover {
+    color: var(--ucs-color);
+}
+
+.header .header-1 .icons div,
+.header .header-1 .icons a {
+    font-size: 25px;
+    margin-left: 15px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover {
+    color: var(--ucs-color);
+}
+
+#search-btn {
+    display: none;
+}
+
+
+/* Second Header */
+
+.header .header-2 {
+    background: var(--ucs-color);
+}
+
+.header .header-2 .navbar {
+    text-align: center;
+}
+
+.header .header-2 .navbar a {
+    color: #fff;
+    display: inline-block;
+    padding: 12px;
+    font-size: 17px;
+}
+
+.header .header-2 .navbar a:hover {
+    background: var(--dark-color);
+}
+
+.header .header-2.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+/* bottom navbar */
+
+.bottom-navbar {
+    text-align: center;
+    background: var(--ucs-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+}
+
+.bottom-navbar a {
+    font-size: 25px;
+    padding: 20px;
+    color: #fff;
+}
+
+.bottom-navbar a:hover {
+    background: var(--dark-color);
+}
+
+/* login form */
+
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .9);
+    position: fixed;
+    top: 0;
+    right: -105%;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
+
+.login-form-container.active {
+    right: 0;
+}
+
+.login-form-container form {
+    background: #fff;
+    border: var(--border);
+    width: 400px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.login-form-container form h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+
+.login-form-container form .box {
+    width: 100%;
+    margin: 7px 0;
+    font-size: 16px;
+    border: var(--border);
+    border-radius: 5px;
+    padding: 10px 12px;
+    color: var(--black);
+    text-transform: none;
+}
+
+.login-form-container form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.login-form-container form .checkbox label {
+    font-size: 15px;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.login-form-container form .btn {
+    text-align: center;
+    width: 100%;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.login-form-container form p {
+    padding-top: 8px;
+    color: var(--light-color);
+    font-size: 15px;
+}
+
+.login-form-container form p a {
+    color: var(--ucs-color);
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    gap: 10px; /* Space between the tabs */
+    padding: 10px; /* Padding for the tab container */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    max-width: 100%; /* Maximum width for the tabs */
+    white-space: nowrap; /* Prevent text wrapping inside the tabs */
+    font-weight: bold;
+}
+
+.tab {
+    flex: 1; /* Ensure all tabs have equal width */
+    padding: 10px 20px; /* Padding for each tab for better spacing */
+    background-color: #f3f6fb; /* Light background for inactive tabs */
+    border: 2px solid #e0e4ea; /* Light border around the tabs */
+    border-radius: 15px; /* Rounded corners for tabs */
+    cursor: pointer;
+    color: #333; /* Dark text color for inactive state */
+    font-weight: bold;
+    text-align: center; /* Center text in the tab */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+.tab:focus{
+    background-color: #20b6b6; /* Darker background for the active tab */
+    border-color: #b8dff1; /* Match border color to the active background */
+    color: white; /* White text for the active tab */
+    border-bottom: 4px solid #110901; /* Bottom border to highlight active tab */
+
+}
+
+.tabs img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+.tab:hover {
+    background-color: #089da1; /* Slightly darker background on hover */
+    
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Always 5 columns */
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.book {
+    text-align: center;
+    background-color: #b8dff1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.book img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.book p {
+    color: #777;
+    text-align: left;
+}
+
+.book:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+
+.stars {
+    text-align: left; 
+    display: flex; /* Use flexbox for star alignment */
+    gap: 2px; /* Space between the stars */
+    width: 120px; /* Total width of the star container */
+    float: left;
+    padding-top: 10px;
+}
+
+.stars i {
+    font-size: 12px; /* Smaller size for the stars */
+    color: black; /* Star color */
+}
+
+.book-icon {
+    width: 30px; /* Button width */
+    height: 30px; /* Button height */
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    cursor: pointer;
+    border: none;
+    background: none; /* Transparent background */
+    color: #333; /* Icon color */
+    border-radius: 50%; /* Round button */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+    float: right;
+    text-align: right;
+    
+}
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1200px) {
+    .books-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .books-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for small screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller devices */
+    }
+}
+
+@media (max-width: 400px) {
+    .books-grid {
+        grid-template-columns: repeat(1, 1fr); /* Single column for mobile devices */
+    }
+}
+
+/* Responsive Styles */
+
+/* Tablets: Adjust for medium-sized devices */
+@media (max-width: 768px) {
+    .book img {
+        width: 80px; /* Smaller book image */
+    }
+
+    .stars i {
+        font-size: 10px; /* Reduce star size */
+    }
+
+    .icon {
+        width: 25px; /* Smaller button size */
+        height: 25px;
+    }
+
+    .icon i {
+        font-size: 14px; /* Reduce icon size */
+    }
+
+    .book h3 {
+        font-size: 14px; /* Smaller title */
+    }
+
+    .book p {
+        font-size: 12px; /* Smaller author text */
+    }
+}
+
+/* Mobile Devices: Adjust for small devices */
+@media (max-width: 480px) {
+    .book img {
+        width: 60px; /* Smaller book image */
+    }
+
+    .stars i {
+        font-size: 8px; /* Smaller stars */
+    }
+
+    .icon {
+        width: 20px; /* Smaller button size */
+        height: 20px;
+    }
+
+    .icon i {
+        font-size: 12px; /* Smaller icon size */
+    }
+
+    .book h3 {
+        font-size: 12px; /* Even smaller title */
+    }
+
+    .book p {
+        font-size: 10px; /* Smaller author text */
+    }
+
+    .book-icons {
+        gap: 5px; /* Reduce space between stars and buttons */
+    }
+}
+
+/* Larger Screens: Desktops and Laptops */
+@media (min-width: 1024px) {
+    .book img {
+        width: 120px; /* Larger book image */
+    }
+
+    .stars i {
+        font-size: 14px; /* Larger stars */
+    }
+
+    .icon {
+        width: 35px; /* Larger button size */
+        height: 35px;
+    }
+
+    .icon i {
+        font-size: 18px; /* Larger icon size */
+    }
+
+    .book h3 {
+        font-size: 18px; /* Larger title */
+    }
+
+    .book p {
+        font-size: 16px; /* Larger author text */
+    }
+}
